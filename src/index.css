@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500&display=swap');
+
+@layer base {
+
+	body {
+		@apply font-[RobotoSlab] font-light bg-greenlight;
+	}
+
+	li {
+		@apply px-4;
+		cursor: pointer;
+	}
+
+	h1 {
+		@apply tracking-[0.75rem] text-3xl font-light;
+	}
+}
