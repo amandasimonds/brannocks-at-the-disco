@@ -2,29 +2,32 @@ import React, { useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
 
 const Navbar = () => {
-	const [nav, setNav] = useState(false);
-	const handleClick = () => setNav(!nav);
+	const [mobileNav, setNav] = useState(false);
+	const handleClick = () => setNav(!mobileNav);
 	return (
-		<div className="fixed w-full h-[80px] flex justify-between items-center bg-white px-4 text-gray">
-			<div>September 28, 2024 | Thurmont, MD</div>
-            <h1>Amanda & Ben</h1>
+		<div>
 			{/* menu */}
-			<ul className="hidden md:flex">
+			<ul className="hidden md:flex justify-center animate-fade-in">
 				<li>Home</li>
 				<li>About</li>
 				<li>Registry</li>
 				<li>Contact</li>
 			</ul>
-			<div onClick={handleClick} className="md:hidden z-10">
-				{!nav ? <FaBars /> : <FaTimes />}
+			<div
+				onClick={handleClick}
+				className={` absolute top-[1rem] right-[1rem] cursor-pointer
+					${!mobileNav ? 'md:hidden text-gray ' : 'text-white z-20'}
+				`}
+			>
+				{!mobileNav ? <FaBars /> : <FaTimes />}
 			</div>
 
 			{/* Mobile menu */}
 			<ul
 				className={
-					!nav
+					!mobileNav
 						? 'hidden'
-						: 'absolute top-0 right-0 w-full h-screen flex flex-col justify-center items-center'
+						: 'absolute top-0 right-0 w-full h-screen flex flex-col bg-greenlight text-white justify-center items-center z-10'
 				}
 			>
 				<li className="py-6 text-4xl">Home</li>

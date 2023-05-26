@@ -1,10 +1,12 @@
+import { Header } from "./components/Header";
 import Home from "./components/Home";
-import Navbar from "./components/Navbar";
+import OurWedding from "./components/OurWedding";
 
 function App() {
 	return <div>
-    <Navbar/>
+    <Header/>
     <Home/>
+    <OurWedding/>
   </div>;
 }
 

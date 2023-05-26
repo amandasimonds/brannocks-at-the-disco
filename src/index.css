@@ -7,7 +7,7 @@
 @layer base {
 
 	body {
-		@apply font-[RobotoSlab] font-light bg-greenlight;
+		@apply font-robotoslab font-light bg-greenlight;
 	}
 
 	li {
@@ -16,6 +16,10 @@
 	}
 
 	h1 {
-		@apply tracking-[0.75rem] text-3xl font-light;
+		@apply tracking-[0.75rem] text-5xl font-light;
+	}
+
+	h2 {
+		@apply tracking-[0.25rem] text-5xl text-white font-light
 	}
 }
