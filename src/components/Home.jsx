@@ -5,10 +5,10 @@ import LeavesVector from '../assets/Leaves Vector.svg';
 const Home = () => {
 	return (
 		<div>
-			<div className="w-100"></div>
+			<div ></div>
 			<img src={BannerPic} className="animate-fade-in" alt="Amanda and Ben in the Rocky Mountains" />
 			<div
-				className="animate-slide-in-left w-[66vw] fixed z-100 right-0 top-[480px]"
+				className="animate-slide-in-left lg:scale-2 lg:top-[700px] md:w-[60vw] w-[30vw] absolute right-0 md:top-[480px] top-[160px]"
 			>
 				<img
 					src={LeavesVector}

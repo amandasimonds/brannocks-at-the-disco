@@ -15,7 +15,7 @@ const Navbar = () => {
 			</ul>
 			<div
 				onClick={handleClick}
-				className={` absolute top-[1rem] right-[1rem] cursor-pointer
+				className={` absolute top-[.5rem] right-[.5rem] cursor-pointer
 					${!mobileNav ? 'md:hidden text-gray ' : 'text-white z-20'}
 				`}
 			>
@@ -30,10 +30,10 @@ const Navbar = () => {
 						: 'absolute top-0 right-0 w-full h-screen flex flex-col bg-greenlight text-white justify-center items-center z-10'
 				}
 			>
-				<li className="py-6 text-4xl">Home</li>
-				<li className="py-6 text-4xl">About</li>
-				<li className="py-6 text-4xl">Registry</li>
-				<li className="py-6 text-4xl">Contact</li>
+				<li className="py-4 text-xl">Home</li>
+				<li className="py-4 text-xl">About</li>
+				<li className="py-4 text-xl">Registry</li>
+				<li className="py-4 text-xl">Contact</li>
 			</ul>
 		</div>
 	);

@@ -15,11 +15,19 @@
 		cursor: pointer;
 	}
 
+	p {
+		@apply md:text-lg text-[.5rem];
+	}
+
 	h1 {
-		@apply tracking-[0.75rem] text-5xl font-light;
+		@apply md:tracking-[0.75rem] md:text-5xl font-light;
 	}
 
 	h2 {
-		@apply tracking-[0.25rem] text-5xl text-white font-light
+		@apply md:tracking-[0.25rem] md:text-5xl text-base/[2rem] text-white font-light
+	}
+
+	h4 {
+		@apply md:text-2xl/[2.5rem] text-sm/[1.5rem] text-white font-light
 	}
 }
