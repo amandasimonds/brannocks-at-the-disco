@@ -8,7 +8,7 @@ const OurWedding = () => {
 			</div>
 			<div className="flex items-center justify-center flex-col md:flex-row">
 				<div className="flex items-center justify-between flex-col md:p-12 p-2">
-					<h4>Saturday, September 28, 2023</h4>
+					<h4>Saturday, September 28, 2024</h4>
 					<div>
 						<h4>Ceremony: 4:00 PM</h4>
 						<h4>Reception: 5:00 PM</h4>
