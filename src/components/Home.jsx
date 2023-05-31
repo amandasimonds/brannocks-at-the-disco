@@ -12,7 +12,7 @@ const Home = () => {
 					alt="Amanda and Ben in the Rocky Mountains"
 				/>
 			</div>
-			<div className="animate-slide-in-left lg:scale-2 lg:top-[700px] md:w-[60vw] w-[30vw] absolute right-0 md:top-[480px] top-[260px]">
+			<div className="animate-slide-in-left lg:scale-2 md:w-[60vw] w-[30vw] absolute right-0 md:top-[60%] top-[260px]">
 				<img
 					src={LeavesVector}
 					alt="White leaves outline"
