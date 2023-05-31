@@ -9,7 +9,7 @@ export const Header = () => {
 					<p>September 28, 2024</p>
 					<p>Thurmont, MD</p>
 				</div>
-				<h1 className='animate-fade-in'>Amanda & Ben</h1>
+				<h1 className='animate-fade-in'>Amanda Simonds & Ben Brannock</h1>
 				<div className="flex-1"></div>
 			</div>
 			<Navbar />
