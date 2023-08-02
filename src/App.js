@@ -7,8 +7,8 @@ function App() {
 	return (
 		<div>
 			<Header />
-			<Home />
-			<OurWedding />
+			<Home id="home" />
+			<OurWedding id="our-wedding"/>
 			<Bottom />
 		</div>
 	);
