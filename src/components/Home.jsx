@@ -1,6 +1,6 @@
 import React from 'react';
-import BannerPic from '../assets/mountains_Edit.jpg';
-import LeavesVector from '../assets/Leaves Vector.svg';
+import BannerPic from '../assets/images/mountains_Edit.jpg';
+import LeavesVector from '../assets/images/Leaves Vector.svg';
 
 const Home = () => {
 	return (
