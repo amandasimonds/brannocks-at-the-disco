@@ -8,7 +8,7 @@ const Home = () => {
 			<div className='h-[40vh] md:h-auto overflow-hidden'>
 				<img
 					src={BannerPic}
-					className="animate-fade-in md:object-cover md:scale-[1] object-cover scale-[3] md:top-0 top-[20px] relative"
+					className="animate-fade-in md:object-cover md:scale-[1] object-cover scale-[3] relative"
 					alt="Amanda and Ben in the Rocky Mountains"
 				/>
 			</div>
@@ -16,7 +16,7 @@ const Home = () => {
 				<img
 					src={LeavesVector}
 					alt="White leaves outline"
-					className="absolute right-0"
+					className="absolute right-0 md:w-[60%]"
 				/>
 			</div>
 		</div>

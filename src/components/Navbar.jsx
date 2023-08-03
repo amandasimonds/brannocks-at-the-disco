@@ -5,14 +5,24 @@ const Navbar = () => {
 	const [mobileNav, setNav] = useState(false);
 	const handleClick = () => setNav(!mobileNav);
 	return (
-		<div>
+		<div className="md:sticky top-0 z-10">
 			{/* menu */}
-			<ul className="hidden md:flex justify-center animate-fade-in">
-				<li><a href="#home">Home</a></li>
-				<li><a href="#our-wedding">Our Wedding</a></li>
-				<li>Registry</li>
-				<li>Contact</li>
-			</ul>
+			<div className="hidden md:block bg-white relative shadow-md z-10">
+				<ul className=" justify-center flex animate-fade-in md:pb-3 md:pt-3 text-graydark">
+					<li>
+						<a href="#our-wedding">wedding day</a>
+					</li>
+					<li>
+						<a href="#our-wedding">accomodations</a>
+					</li>
+					<li>
+						<a href="#our-wedding">rsvp</a>
+					</li>
+					<li>
+						<a href="#our-wedding">contact</a>
+					</li>
+				</ul>
+			</div>
 			<div
 				onClick={handleClick}
 				className={` absolute top-[.5rem] right-[.5rem] cursor-pointer
@@ -36,8 +46,12 @@ const Navbar = () => {
 				<li className="py-4 text-xl">
 					<a href="#our-wedding">Our Wedding</a>
 				</li>
-				<li className="py-4 text-xl">Registry</li>
-				<li className="py-4 text-xl">Contact</li>
+				<li className="py-4 text-xl">
+					<a href="#home">Registry</a>
+				</li>
+				<li className="py-4 text-xl">
+					<a href="#our-wedding">Contact</a>
+				</li>
 			</ul>
 		</div>
 	);

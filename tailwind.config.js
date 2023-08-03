@@ -4,7 +4,8 @@ module.exports = {
 	theme: {
 		extend: {
 			fontFamily: {
-				robotoslab: ['"Roboto Slab"', 'cursive'],
+				playfair: ['"Playfair Display"', 'sans-serif'],
+				helloloved: ['"Hello Loved"', 'cursive'],
 			},
 			keyframes: {
 				slideInLeft: {
@@ -42,7 +43,8 @@ module.exports = {
 		colors: {
 			green: '#354e2f',
 			greenlight: '#687c4d',
-			rust: '#af5f32',
+			greenlight2: '#89A466',
+			rust: '#D77E61',
 			orange: '#d0671f',
 			blue: '#3f4f62',
 			graylight: '#9fa092',

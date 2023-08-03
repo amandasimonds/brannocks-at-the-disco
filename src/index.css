@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 @font-face {
-	font-family: 'HelloLoved';
+	font-family: 'Hello Loved';
 	src: local('HelloLovedLovelyFont'),
 		url('./assets/fonts/HelloLoved/HelloLovedLovelyFont.ttf')
 			format('truetype');
@@ -19,6 +19,13 @@
 }
 
 @layer base {
+	body {
+		@apply font-playfair text-gray;
+	}
+
+	a {
+		@apply hover:text-rust md:text-lg;
+	}
 
 	li {
 		@apply px-4;
@@ -26,15 +33,15 @@
 	}
 
 	p {
-		@apply md:text-lg text-[.5rem];
+		@apply md:text-lg;
 	}
 
 	h1 {
-		@apply md:tracking-[0.75rem] md:text-5xl font-light;
+		@apply md:text-7xl text-greenlight2 font-bold text-3xl
 	}
 
 	h2 {
-		@apply md:tracking-[0.25rem] md:text-5xl text-base/[2rem] text-white font-light;
+		@apply md:text-5xl text-lg font-bold;
 	}
 
 	h4 {
