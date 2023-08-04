@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
+import { AiFillHeart } from 'react-icons/ai';
 
 const Navbar = () => {
 	const [mobileNav, setNav] = useState(false);
@@ -9,7 +10,8 @@ const Navbar = () => {
 			{/* menu */}
 			<div className="hidden md:block bg-white relative shadow-md z-10">
 				<ul className=" justify-center flex animate-fade-in md:pb-3 md:pt-3 text-graydark">
-					<li>
+					<li className="flex gap-2 items-center hover:text-rust">
+						<AiFillHeart className="text-white" />
 						<a href="#our-wedding">wedding day</a>
 					</li>
 					<li>

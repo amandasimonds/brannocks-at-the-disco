@@ -3,6 +3,7 @@ import Home from './components/Home';
 import Bottom from './components/Bottom';
 import Navbar from './components/Navbar';
 import Main from './components/Main';
+import PasswordProtect from './components/PasswordProtect';
 
 function App() {
 	return (
@@ -10,7 +11,9 @@ function App() {
 			<Header />
 			<Navbar />
 			<Home id="home" />
-			<Main/>
+			<PasswordProtect>
+				<Main />
+			</PasswordProtect>
 			<Bottom />
 		</div>
 	);

@@ -37,13 +37,14 @@ module.exports = {
 				'fade-in': 'fadeIn 1.5s ease-in-out',
 				'slide-in-top': 'slideInTop 1.5s ease-in-out',
 				'slide-in-right': 'slideInRight 1.5s ease-in-out',
-				'fade-in-delay': 'fadeInDelay 3s ease-in-out'
+				'fade-in-delay': 'fadeInDelay 3s ease-in-out',
 			},
 		},
 		colors: {
 			green: '#354e2f',
 			greenlight: '#687c4d',
 			greenlight2: '#89A466',
+			greenlightest: '#D7E8C2',
 			rust: '#D77E61',
 			orange: '#d0671f',
 			blue: '#3f4f62',
