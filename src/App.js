@@ -5,7 +5,7 @@ import Navbar from './components/Navbar';
 import Main from './components/Main';
 import PasswordProtect from './components/PasswordProtect';
 
-function App() {
+const App = () => {
 	return (
 		<div>
 			<Header />
