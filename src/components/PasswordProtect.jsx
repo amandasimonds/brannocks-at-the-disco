@@ -1,7 +1,7 @@
-import React, { createContext, useContext, useState } from 'react';
+import React, { useState } from 'react';
 
 export const PasswordProtect = (props) => {
-	const AuthContext = createContext(false)
+
 	const [authorized, setAuthorized] = useState(false);
 	const [enteredPassword, setEnteredPassword] = useState('');
 
