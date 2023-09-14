@@ -1,13 +1,12 @@
 import React, { useState } from 'react';
 import { getDatabase, ref, get, child } from 'firebase/database';
 import { signInWithEmailAndPassword, getAuth } from 'firebase/auth';
-import { auth } from '../firebase/auth';
 
 const Admin = () => {
 	const [data, setData] = useState([]);
 
 	const db = getDatabase();
-	const dbRef = ref(db, 'guests/', +':id');
+	// const dbRef = ref(db, 'guests/', +':id');
 
 	// onValue(dbRef, (snapshot) => {
 	// 	const data = snapshot.val();
