@@ -2,7 +2,7 @@ import React from 'react';
 import BannerPic from '../assets/images/mountains_Edit.jpg';
 import LeavesVector from '../assets/images/Leaves Vector.svg';
 
-const Home = () => {
+const Hero = () => {
 	return (
 		<div>
 			<div className='h-[40vh] md:h-auto overflow-hidden'>
@@ -23,4 +23,4 @@ const Home = () => {
 	);
 };
 
-export default Home;
+export default Hero;

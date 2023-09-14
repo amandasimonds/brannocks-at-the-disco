@@ -1,24 +1,19 @@
-import { Header } from './components/Header';
-import Home from './components/Home';
-import Bottom from './components/Bottom';
-import Navbar from './components/Navbar';
-import Main from './components/Main';
-import PasswordProtect from './components/PasswordProtect';
+import React from 'react';
+import { BrowserRouter,
+	Routes,
+	Route} from 'react-router-dom';
 import Admin from './components/Admin';
+import MainPage from './components/MainPage';
 
 const App = () => {
 	return (
-		<div>
-			<Header />
-			<Navbar />
-			<Home id="home" />
-			<PasswordProtect>
-				<Main />
-			</PasswordProtect>
-			<Admin/>
-			<Bottom />
-		</div>
+		<BrowserRouter>
+			<Routes>
+				<Route path="/" element={<MainPage/>} />
+				<Route path="/admin" element={<Admin/>} />
+			</Routes>
+		</BrowserRouter>
 	);
-}
+};
 
 export default App;
