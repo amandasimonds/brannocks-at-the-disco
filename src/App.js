@@ -4,6 +4,7 @@ import Bottom from './components/Bottom';
 import Navbar from './components/Navbar';
 import Main from './components/Main';
 import PasswordProtect from './components/PasswordProtect';
+import Admin from './components/Admin';
 
 const App = () => {
 	return (
@@ -14,6 +15,7 @@ const App = () => {
 			<PasswordProtect>
 				<Main />
 			</PasswordProtect>
+			<Admin/>
 			<Bottom />
 		</div>
 	);
