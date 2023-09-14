@@ -1,4 +1,6 @@
 import { initializeApp } from 'firebase/app';
+import { getDatabase } from 'firebase/database';
+import { getAuth } from 'firebase/auth';
 
 const config = {
 	apiKey: process.env.REACT_APP_API_KEY,
@@ -12,5 +14,8 @@ const config = {
 };
 
 const app = initializeApp(config);
+
+export const database = getDatabase();
+export const auth = getAuth(app);
 
 export default app;

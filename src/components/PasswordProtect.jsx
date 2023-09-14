@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { signInWithEmailAndPassword } from 'firebase/auth';
-import { auth } from '../firebase/auth';
+import { auth } from '../firebase';
 
 export const PasswordProtect = (props) => {
 	const [currentUser, setUser] = useState();
