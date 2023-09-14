@@ -29,7 +29,7 @@ export const PasswordProtect = (props) => {
 		)
 			.then((userCredential) => {
 				// Signed in
-				const user = userCredential.user;
+				// const user = userCredential.user;
 				localStorage.setItem('auth', true);
 				checkAuth();
 			})
@@ -37,8 +37,8 @@ export const PasswordProtect = (props) => {
 				alert(
 					`You entered the wrong password. Need the password? Email amandasimonds9@gmail.com with your name and phone number, and I'll get it to you soon`
 				);
-				const errorCode = error.code;
-				const errorMessage = error.message;
+				// const errorCode = error.code;
+				// const errorMessage = error.message;
 			});
 	};
 
