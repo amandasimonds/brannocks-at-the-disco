@@ -1,10 +1,13 @@
 import React, { useState } from 'react';
 import { getDatabase, ref, get, child } from 'firebase/database';
-import { signInWithEmailAndPassword, getAuth } from 'firebase/auth';
+import { signInWithEmailAndPassword, getAuth, signOut } from 'firebase/auth';
 
 const Admin = () => {
 	const [data, setData] = useState([]);
-
+	const [enteredPassword, setEnteredPassword] = useState('');
+	const [enteredEmail, setEnteredEmail] = useState('');
+	const [currentUser, setUser] = useState();
+	const auth = getAuth();
 	const db = getDatabase();
 	// const dbRef = ref(db, 'guests/', +':id');
 
@@ -13,6 +16,17 @@ const Admin = () => {
 	// 	console.log(data);
 	// 	dataPrint.push(data);
 	// });
+
+	const checkAuth = () => {
+		auth.onAuthStateChanged(function (user) {
+			if (user) {
+				console.log(user);
+				setUser(user);
+			} else {
+				console.log(user, 'no user logged in');
+			}
+		});
+	};
 
 	get(child(ref(db), 'guests/'))
 		.then((snapshot) => {
@@ -28,17 +42,24 @@ const Admin = () => {
 			console.error(error);
 		});
 
-	const [enteredPassword, setEnteredPassword] = useState('');
-    const [enteredEmail, setEnteredEmail] = useState('');
-    const [user, setUser] = useState('');
-    const auth = getAuth();
-
 	const passwordInputChangeHandler = (event) => {
 		setEnteredPassword(event.target.value);
 	};
 
-    const emailInputChangeHandler = (event) => {
+	const emailInputChangeHandler = (event) => {
 		setEnteredEmail(event.target.value);
+	};
+
+	const doSignOut = () => {
+		signOut(auth)
+			.then(() => {
+				// Sign-out successful.
+				console.log(auth.currentUser, 'signedout');
+				checkAuth();
+			})
+			.catch((error) => {
+				// An error happened.
+			});
 	};
 
 	const signIn = (event) => {
@@ -46,13 +67,12 @@ const Admin = () => {
 		signInWithEmailAndPassword(auth, enteredEmail, enteredPassword)
 			.then((userCredential) => {
 				const user = userCredential.user;
-                console.log(user)
-                setUser(user)
+				console.log(user);
+				setUser(user);
 			})
 			.catch((error) => {
-				alert(
-					`You entered the wrong password.`
-				);
+				alert(`You entered the wrong password.`);
+				console.log(auth, enteredEmail, enteredPassword);
 				// const errorCode = error.code;
 				// const errorMessage = error.message;
 			});
@@ -64,26 +84,40 @@ const Admin = () => {
 		}
 	};
 
-	return user ? (
-		<div>{JSON.stringify(data)}</div>
+	return currentUser ? (
+		<div>
+			<button className="btn" type="submit" onClick={doSignOut}>
+				Sign out of current user
+			</button>
+			<div>{JSON.stringify(data)}</div>
+		</div>
 	) : (
 		<div className="flex justify-center pt-5 pb-5">
-			<div className="flex flex-col items-center gap-4 w-10/12 bg-greenlightest p-4 rounded">
-				Please sign in
-				<input
-					type="text"
-					className="input"
-					value={enteredPassword}
-					onChange={passwordInputChangeHandler}
-					onKeyDown={handleEnterKeyDown}
-				/>
-                <input
-					type="text"
-					className="input"
-					value={enteredEmail}
-					onChange={emailInputChangeHandler}
-					onKeyDown={handleEnterKeyDown}
-				/>
+			<div className="flex items-center justify-center gap-4 w-10/12 bg-greenlightest p-4 rounded">
+				<div className="flex items-center gap-4">
+					<button className="btn" type="submit" onClick={doSignOut}>
+						Sign out of current user
+					</button>
+					<p>|</p>
+					Email
+					<input
+						type="text"
+						className="input"
+						value={enteredEmail}
+						onChange={emailInputChangeHandler}
+						onKeyDown={handleEnterKeyDown}
+					/>
+				</div>
+				<div className="flex items-center gap-4">
+					Password
+					<input
+						type="text"
+						className="input"
+						value={enteredPassword}
+						onChange={passwordInputChangeHandler}
+						onKeyDown={handleEnterKeyDown}
+					/>
+				</div>
 				<button className="btn" type="submit" onClick={signIn}>
 					Enter
 				</button>
