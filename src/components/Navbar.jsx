@@ -18,6 +18,15 @@ const Navbar = () => {
 						<a href="#our-wedding">accomodations</a>
 					</li>
 					<li>
+						<a href="#our-wedding">accomodations</a>
+					</li>
+					<li>
+						<a href="#our-wedding">accomodations</a>
+					</li>
+					<li>
+						<a href="#our-wedding">accomodations</a>
+					</li>
+					<li>
 						<a href="#our-wedding">rsvp</a>
 					</li>
 					<li>
