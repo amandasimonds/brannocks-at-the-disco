@@ -1,5 +1,5 @@
 import React from 'react';
-import SproutVector from '../assets/images/sprout_vector.svg';
+import SproutVector from '../../assets/images/sprout_vector.svg';
 
 export const Bottom = () => {
 	return (

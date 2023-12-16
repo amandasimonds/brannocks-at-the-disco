@@ -3,7 +3,7 @@ import Hero from './Hero';
 import Bottom from './Bottom';
 import Navbar from './Navbar';
 import Main from './Main';
-import PasswordProtect from './PasswordProtect';
+import PasswordProtect from '../PasswordProtect';
 
 const MainPage = () => {
 	return (

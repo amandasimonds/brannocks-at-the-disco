@@ -21,7 +21,7 @@ export const PasswordProtect = (props) => {
 
 	const checkPassword = (event) => {
 		event.preventDefault();
-		signInWithEmailAndPassword(auth, 'guest@guest.com', enteredPassword)
+		signInWithEmailAndPassword(auth, 'guest@guest.com', enteredPassword.toLowerCase())
 			.then((userCredential) => {
 				setUser(userCredential.user);
 			})
