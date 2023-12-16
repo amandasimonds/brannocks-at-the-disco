@@ -6,7 +6,7 @@ export const Header = () => {
 			<div className="animate-slide-in-right">
 				<p>September 28, 2024</p>
 			</div>
-			<h1 className="font-helloloved pb-4 pt-4 text-[1.5rem] md:text-[3rem] text-greenlight2 animate-fade-in">
+			<h1 className="font-helloloved text-[1.5rem] md:text-[3rem] text-greenlight2 animate-fade-in">
 				Amanda & Ben
 			</h1>
 		</div>

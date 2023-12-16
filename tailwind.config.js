@@ -6,6 +6,12 @@ module.exports = {
 			fontFamily: {
 				playfair: ['"Playfair Display"', 'sans-serif'],
 				helloloved: ['"Hello Loved"', 'cursive'],
+				allura: ['"Allura"', 'cursive'],
+				comfortaa: ['"Comfortaa"', 'sans-serif'],
+				gilda: ['"Gilda Display"', 'serif'],
+				spinnaker: ['"Spinnaker"', 'sans-serif'],
+				raleway: ['"Raleway"', 'sans-serif'],
+				ibarra: ['"Ibarra_Real_Nova"', 'serif'],
 			},
 			keyframes: {
 				slideInLeft: {

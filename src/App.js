@@ -3,7 +3,7 @@ import { BrowserRouter,
 	Routes,
 	Route} from 'react-router-dom';
 import Admin from './components/Admin';
-import MainPage from './components/MainPage';
+import MainPage from './components/Layout/MainPage';
 
 const App = () => {
 	return (

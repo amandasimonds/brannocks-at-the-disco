@@ -9,18 +9,65 @@
 			format('truetype');
 }
 
+@font-face {
+	font-family: 'Allura';
+	src: local('AlluraFont'),
+		url('./assets/fonts/Allura/Allura-Regular.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Comfortaa';
+	src: local('ComfortaaFont'),
+		url('./assets/fonts/Comfortaa/Comfortaa-VariableFont_wght.ttf')
+			format('truetype');
+}
+
+@font-face {
+	font-family: 'Gilda Display';
+	src: local('Gilda_DisplayFont'),
+		url('./assets/fonts/Gilda_Display/GildaDisplay-Regular.ttf')
+			format('truetype');
+}
+
+@font-face {
+	font-family: 'Spinnaker';
+	src: local('Spinnaker'),
+		url('./assets/fonts/Spinnaker/Spinnaker-Regular.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Ibarra_Real_Nova';
+	src: local('Ibarra_Real_Nova'),
+		url('./assets/fonts/Ibarra_Real_Nova/IbarraRealNova-VariableFont_wght.ttf')
+			format('truetype');
+}
+
+@font-face {
+	font-family: 'Raleway';
+	src: local('Raleway'),
+		url('./assets/fonts/Raleway/Raleway-VariableFont_wght.ttf')
+			format('truetype');
+}
+
+@font-face {
+	font-family: 'Hello Loved';
+	src: local('HelloLovedLovelyFont'),
+		url('./assets/fonts/HelloLoved/HelloLovedLovelyFont.ttf')
+			format('truetype');
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
 
 * {
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
-	font-family: 'Playfair Display', sans-serif;
+	font-family: 'Gilda Display', sans-serif;
 }
 
 @layer base {
 	body {
-		@apply font-playfair text-gray;
+		@apply text-gray;
 	}
 
 	a {
@@ -28,7 +75,6 @@
 	}
 
 	li {
-		@apply px-4;
 		cursor: pointer;
 	}
 
@@ -37,15 +83,19 @@
 	}
 
 	h1 {
-		@apply md:text-7xl text-greenlight2 font-bold text-3xl;
+		@apply md:text-5xl md:my-5 my-4 text-greenlight2 text-3xl font-helloloved;
 	}
 
 	h2 {
-		@apply md:text-5xl text-lg font-bold;
+		@apply md:text-5xl my-2 text-lg font-bold;
+	}
+
+	h3 {
+		@apply md:text-3xl my-2 text-base text-greenlight2 font-semibold;
 	}
 
 	h4 {
-		@apply md:text-2xl/[2.5rem] text-sm/[1.5rem] text-white font-light;
+		@apply md:text-2xl/[2.5rem] text-sm/[1.5rem] text-greenlight2 font-light;
 	}
 
 	.btn {
@@ -55,4 +105,12 @@
 	.input {
 		@apply appearance-none border focus:border-greenlight2 border-graylight rounded p-2;
 	}
+
+	.row-divider {
+		border-bottom: 1px solid rgb(213, 213, 213);
+	}
+
+	.schedule div:last-of-type .row-divider {
+		display: none;
+	} 
 }
