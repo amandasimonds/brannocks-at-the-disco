@@ -1,8 +1,7 @@
 import React from 'react';
 import { AiFillHeart } from 'react-icons/ai';
 import {
-	Link,
-	animateScroll as scroll
+	Link
 } from 'react-scroll';
 
 const Navbar = () => {
