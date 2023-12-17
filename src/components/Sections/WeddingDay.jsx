@@ -3,25 +3,33 @@ import React from 'react';
 const WeddingDay = () => {
 	const rows = [
 		{
-			time: '3:00 - 4:00PM',
+			time: '3:00 - 3:30PM',
 			event: 'Ceremony',
 			location: 'Pine Cathedral',
 			misc: [
-				'Will be outdoors weather permitting',
-				'Guests arrive 15 minutes early',
+				'Guests may begin arriving at 2:30',
+				'Ceremony will be outside weather-permitting',
 			],
 		},
 		{
-			time: '4:00 - 4:30PM',
+			time: '4:00 - 5:00PM',
 			event: 'Cocktail Hour',
 			location: 'The Lodge',
-			misc: [],
+			misc: [
+				'Make your way up to the Lodge for refreshments and music.'
+			],
 		},
 		{
-			time: '5:00 - 6:00PM',
+			time: '5:30 - 7:00PM',
 			event: 'Dinner',
 			location: 'The Lodge',
-			misc: [],
+			misc: ['Dinner will be upstairs inside the Lodge'],
+		},
+		{
+			time: '7:00 - 9:00PM',
+			event: 'Reception',
+			location: 'The Lodge',
+			misc: ['Dancing and partying will commence in the Tree Room downstairs!'],
 		},
 	];
 
