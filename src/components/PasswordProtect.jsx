@@ -41,7 +41,7 @@ export const PasswordProtect = (props) => {
 	return currentUser ? (
 		<div>{props.children}</div>
 	) : (
-		<div className="flex justify-center pt-5 pb-5 animate-fade-in delay-200">
+		<div id="login" className="flex justify-center pt-5 pb-5 animate-fade-in delay-200">
 			<div className="flex flex-col items-center gap-4 w-10/12 bg-greenlightest p-4 rounded">
 				Please enter the guest password
 				<input
