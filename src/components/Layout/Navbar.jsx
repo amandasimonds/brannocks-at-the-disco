@@ -4,7 +4,7 @@ import {
 	Link
 } from 'react-scroll';
 
-const Navbar = () => {
+const Navbar = (props) => {
 	const navLinks = [
 		{
 			title: 'our wedding',
@@ -36,8 +36,8 @@ const Navbar = () => {
 						<li className="flex gap-1 items-center hover:text-rust">
 							<AiFillHeart className="text-rust w-[12px]" />
 							<Link
-								to={link.link}
-								activeClass="active"
+								to={ props.auth ? link.link : 'login'}
+								activeClass="text-rust"
 								spy={true}
 								smooth={'easeInOutCubic'}
 								hashSpy={true}

@@ -5,7 +5,7 @@ import Accomodations from '../Sections/Accomodations';
 import Rsvp from '../Sections/Rsvp';
 import Contact from '../Sections/Contact';
 
-const Main = () => {
+const Sections = () => {
 	return (
 		<div className="flex flex-col p-6 md:p-10 items-center animate-fade-in md:gap-20 gap-10">
 			<OurWedding/>
@@ -17,4 +17,4 @@ const Main = () => {
 	);
 };
 
-export default Main;
+export default Sections;
