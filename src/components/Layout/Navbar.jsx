@@ -50,7 +50,7 @@ const Navbar = (props) => {
 						<a
 							rel="noreferrer"
 							target="_blank"
-							href="https://withjoy.com/amanda-and-ben-eclug84sbl000e01tyfi8r0ofks/registry"
+							href="https://www.zola.com/registry/brannocksimondsweddi"
 						>
 							registry
 						</a>
