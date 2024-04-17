@@ -69,12 +69,11 @@
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
-	font-family: 'Gilda Display', sans-serif;
 }
 
 @layer base {
 	body {
-		@apply text-gray;
+		@apply text-gray font-ibarra;
 	}
 
 	a {
@@ -86,31 +85,31 @@
 	}
 
 	p {
-		@apply md:text-lg;
+		@apply md:text-base;
 	}
 
 	h1 {
-		@apply md:text-5xl md:my-5 my-4 text-greenlight2 text-3xl font-gilda;
+		@apply md:text-4xl m-2 text-greenlight2 text-2xl font-spinnaker;
 	}
 
 	h2 {
-		@apply md:text-5xl my-2 text-lg font-semibold;
+		@apply md:text-2xl text-lg font-spinnaker font-light;
 	}
 
 	h3 {
-		@apply md:text-3xl my-2 text-base text-greenlight2 font-semibold;
+		@apply md:text-lg text-base text-greenlight font-spinnaker;
 	}
 
 	h4 {
-		@apply md:text-2xl/[2.5rem] text-sm/[1.5rem] font-light;
+		@apply md:text-base font-semibold;
 	}
 
 	.btn {
-		@apply bg-greenlight2 text-white pt-1 pb-1 pl-2 pr-2 rounded;
+		@apply bg-greenlight2 text-white py-1 px-2 rounded-md font-spinnaker;
 	}
 
 	.input {
-		@apply appearance-none border focus:border-greenlight2 border-graylight rounded p-2;
+		@apply appearance-none border focus:border-greenlight2 border-graylight rounded-md p-2;
 	}
 
 	.row-divider {

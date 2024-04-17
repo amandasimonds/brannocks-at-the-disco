@@ -47,6 +47,7 @@ module.exports = {
 			},
 		},
 		colors: {
+			black: '#000000',
 			green: '#354e2f',
 			greenlight: '#687c4d',
 			greenlight2: '#89A466',

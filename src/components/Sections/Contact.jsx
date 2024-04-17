@@ -6,7 +6,8 @@ const Contact = () => {
 		<div id="contact" className="w-full">
 			<div className="flex flex-col items-center w-full">
 				<h1>Contact</h1>
-				<h3>Coming Soon</h3>
+				<p>Questions about hotel rooms: Charlene Simonds | cjsimonds@aol.com</p>
+				<p>Questions for Amanda & Ben: amandasimonds9@gmail.com</p>
 			</div>
 		</div>
 	);
