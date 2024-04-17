@@ -7,8 +7,9 @@ const WeddingDay = () => {
 			event: 'Shuttle to the Ceremony',
 			location: 'Hampton Inn Fort Dedrick',
 			misc: [
-				'Everyone is welcome to board the complimentary shuttle to the venue. It will leave from  1565 Opossumtown Pike, Frederick at 2:15PM',
-				'The shuttle will return to the hotel at 9PM after the reception',
+				'Everyone is welcome to board the complimentary shuttle to the venue.',
+				'It will leave the hotel at 1565 Opossumtown Pike, Frederick, at 2:15PM',
+				'*If you are checking into the hotel on Saturday, plan accordingly as regular check in time is after 3pm.',
 			],
 		},
 		{
@@ -27,25 +28,19 @@ const WeddingDay = () => {
 			misc: ['Make your way up to the Lodge for refreshments and music.'],
 		},
 		{
-			time: '5:00 - 6:00 PM',
-			event: 'Dinner',
-			location: 'The Lodge',
-			misc: ['Dinner will be upstairs inside the Lodge'],
-		},
-		{
-			time: '6:00 - 8:00 PM',
-			event: 'Reception',
-			location: 'The Lodge',
+			time: '5:00 - 8:00 PM',
+			event: 'Dinner & Reception',
+			location: 'The Lodge & Tree Room',
 			misc: [
-				'Dancing and partying will commence in the Tree Room downstairs!',
+				'Dinner will be upstairs in the lodge, and dancing and partying will commence in the Tree Room downstairs!',
 			],
 		},
 		{
-			time: '8:00 - 8:15 PM',
+			time: '8:00 - 8:30 PM',
 			event: 'Farewell',
 			location: 'The Lodge',
 			misc: [
-				'Bid adieu to a beautiful evening! The shuttle will leave the venue at 9PM and return to the hotel for those that rode on the shuttle.',
+				'Bid adieu to a beautiful evening! The shuttle will leave the venue at 8:30PM and return to the hotel for those that rode on the shuttle.',
 			],
 		},
 		{
@@ -67,7 +62,7 @@ const WeddingDay = () => {
 					<p>12805A Mink Farm Rd</p>
 					<p>Thurmont, MD 21788</p>
 					<span className="mt-2 ml-4 mr-4">
-						<p>Welcome Party: 8pm, Friday, September 27</p> 
+						<p>Welcome Party: 8pm, Friday, September 27</p>
 						<p>@ Brewer's Alley.</p>
 					</span>
 				</div>
