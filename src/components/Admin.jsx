@@ -86,7 +86,7 @@ const Admin = () => {
 			guests
 			{guestData.map((item) => (
 				<>
-					<p>{item}</p>
+					<p key={item}>{item}</p>
 				</>
 			))}
 		</div>

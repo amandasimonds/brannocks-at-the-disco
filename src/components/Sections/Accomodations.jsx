@@ -9,11 +9,11 @@ const Accomodations = () => {
 					Please book ASAP - it will be a busy weekend in Frederick!
 				</p>
 				<p className="mt-6">
-					<span class="font-semibold">Wedding Party</span>: you do not need to book. Please contact
+					<span className="font-semibold">Wedding Party</span>: you do not need to book. Please contact
 					Charlene at charlenesimonds@gmail.com for info on your
 					accomodations.
 				</p>
-				<span class="bg-greenlight2 hover:bg-greenlight3 my-6 py-3 text-lg font-spinnaker px-4 rounded-md text-white cursor-pointer">
+				<span className="bg-greenlight2 hover:bg-greenlight3 my-6 py-3 text-lg font-spinnaker px-4 rounded-md text-white cursor-pointer">
 					<p>Book at our hotel block:</p>
 					<p>Hampton Inn & Suites Fort Dedrick</p>
 				</span>

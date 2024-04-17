@@ -40,7 +40,7 @@ const WeddingDay = () => {
 			event: 'Farewell',
 			location: 'The Lodge',
 			misc: [
-				'Bid adieu to a beautiful evening! The shuttle will leave the venue at 8:30PM and return to the hotel for those that rode on the shuttle.',
+				'Bid adieu to a beautiful evening! For those that rode the shuttle, it will depart at 8:30PM and return to the hotel.',
 			],
 		},
 		{
@@ -68,7 +68,7 @@ const WeddingDay = () => {
 				</div>
 				<table className="md:m-10 m-5 w-full schedule">
 					{rows.map((row) => (
-						<div className="flex md:items-center flex-col w-full">
+						<tbody key={row.event} className="flex md:items-center flex-col w-full">
 							<tr className="flex md:gap-12 schedule-row p-3 md:p-10 flex-col md:flex-row w-full">
 								<td className="md:w-1/2 flex md:justify-end flex-1">
 									<h3>{row.time}</h3>
@@ -77,12 +77,12 @@ const WeddingDay = () => {
 									<h3>{row.event}</h3>
 									<h4>{row.location}</h4>
 									{row.misc.map((item) => (
-										<p>{item}</p>
+										<p key={item}>{item}</p>
 									))}
 								</td>
 							</tr>
-							<div className="w-3/4 row-divider"></div>
-						</div>
+							<tr className="w-3/4 row-divider"></tr>
+						</tbody>
 					))}
 				</table>
 			</div>
