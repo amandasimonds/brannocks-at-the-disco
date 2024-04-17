@@ -13,10 +13,11 @@ export const MainPage = (props) => {
 
 	auth.onAuthStateChanged(function (user) {
 		if (user) {
-			console.log(user);
 			setUser(user);
+		} else if (localStorage.getItem("welcome") === "intothewoodsyeoyeo") {
+			console.log("checked local storage")
 		} else {
-			console.log(user, 'no user logged in');
+			console.log('no user logged in');
 		}
 	});
 
@@ -33,6 +34,8 @@ export const MainPage = (props) => {
 		)
 			.then((userCredential) => {
 				setUser(userCredential.user);
+				console.log('hey');
+				localStorage.setItem("welcome", "intothewoodsyeoyeo")
 			})
 			.catch((error) => {
 				alert(

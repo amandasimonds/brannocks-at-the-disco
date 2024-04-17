@@ -56,6 +56,13 @@
 			format('truetype');
 }
 
+@font-face {
+	font-family: 'Mrs Saint';
+	src: local('MrsSaintFont'),
+		url('./assets/fonts/Mrs_Saint_Delafield/MrsSaintDelafield-Regular.ttf')
+			format('truetype');
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
 
 * {
@@ -83,11 +90,11 @@
 	}
 
 	h1 {
-		@apply md:text-5xl md:my-5 my-4 text-greenlight2 text-3xl font-helloloved;
+		@apply md:text-5xl md:my-5 my-4 text-greenlight2 text-3xl font-gilda;
 	}
 
 	h2 {
-		@apply md:text-5xl my-2 text-lg font-bold;
+		@apply md:text-5xl my-2 text-lg font-semibold;
 	}
 
 	h3 {
@@ -95,7 +102,7 @@
 	}
 
 	h4 {
-		@apply md:text-2xl/[2.5rem] text-sm/[1.5rem] text-greenlight2 font-light;
+		@apply md:text-2xl/[2.5rem] text-sm/[1.5rem] font-light;
 	}
 
 	.btn {

@@ -8,10 +8,6 @@ const Navbar = (props) => {
 	const navLinks = [
 		{
 			title: 'our wedding',
-			link: 'our-wedding',
-		},
-		{
-			title: 'wedding day',
 			link: 'wedding-day',
 		},
 		{
