@@ -8,7 +8,7 @@ const WeddingDay = () => {
 			location: 'Hampton Inn Fort Dedrick',
 			misc: [
 				'Everyone is welcome to board the complimentary shuttle to the venue.',
-				'It will leave the hotel at 1565 Opossumtown Pike, Frederick, at 2:15PM',
+				'It will leave the hotel at 2:15PM from the hotel at 1565 Opossumtown Pike, Frederick',
 				'*If you are checking into the hotel on Saturday, plan accordingly as regular check in time is after 3pm.',
 			],
 		},
@@ -70,7 +70,7 @@ const WeddingDay = () => {
 					{rows.map((row) => (
 						<tbody key={row.event} className="flex md:items-center flex-col w-full">
 							<tr className="flex md:gap-12 schedule-row p-3 md:p-10 flex-col md:flex-row w-full">
-								<td className="md:w-1/2 flex md:justify-end flex-1">
+								<td className="flex md:justify-end flex-shrink-0 flex-grow-0 basis-1/4">
 									<h3>{row.time}</h3>
 								</td>
 								<td className="flex flex-col flex-1">
