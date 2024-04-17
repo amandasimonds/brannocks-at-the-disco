@@ -15,7 +15,7 @@ const WeddingDay = () => {
 		{
 			time: '3:00 - 3:30PM',
 			event: 'Ceremony',
-			location: 'Pine Cathedral',
+			location: 'Mountain Memories ThorpeWood - Pine Cathedral',
 			misc: [
 				'Guests may begin arriving at 2:30',
 				'Ceremony will be outside weather-permitting',
