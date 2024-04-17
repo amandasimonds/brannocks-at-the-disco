@@ -66,10 +66,10 @@ const WeddingDay = () => {
 					<p className="mt-2">Mountain Memories at ThorpeWood</p>
 					<p>12805A Mink Farm Rd</p>
 					<p>Thurmont, MD 21788</p>
-					<p className="mt-2 ml-4 mr-4">
-						Come get the the party started on Friday at our Welcome
-						Party: 8pm, Friday, September 27 @ Brewer's Alley.
-					</p>
+					<span className="mt-2 ml-4 mr-4">
+						<p>Welcome Party: 8pm, Friday, September 27</p> 
+						<p>@ Brewer's Alley.</p>
+					</span>
 				</div>
 				<table className="md:m-10 m-5 w-full schedule">
 					{rows.map((row) => (

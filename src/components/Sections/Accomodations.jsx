@@ -1,22 +1,66 @@
 import React from 'react';
 
 const Accomodations = () => {
-
 	return (
-		<div id="accomodations" className="w-full">
-			<div className="flex flex-col items-center w-full">
+		<div id="accomodations" className="w-full md:w-1/2">
+			<div className="flex flex-col items-center w-full text-center">
 				<h1>Accomodations</h1>
-				<p className='mt-2'>Please book as soon as possible - it will be a busy weekend in Frederick!</p>
-				<h4 className='mt-4'>WEDDING PARTY - you do not need to book. Please contact Charlene at cjsimonds@aol.com for info on your accomodations.</h4>
-				<h3 className='mt-4'>Our wedding hotel block is at:</h3>
-				<h3>Hampton Inn & Suites Fort Dedrick</h3>
-				<h3>1565 Opossumtown Pike Frederick, MD 21702</h3>
-				<p className='mt-2 md:mx-12'>The complimentary coach shuttle will be leaving and returning to this hotel. Any wedding guest can take the shuttle, whether you are staying at the hotel or not.</p>
-				<p className='mt-2 md:mx-12'>If you are checking in on Saturday and wish to use the shuttle, please remember that the shuttle leaves at 2:15pm, which is before regular hotel check in time. If you would like to check into your room before going to the wedding, please don't forget to ask for early check in!</p>
-				<h3 className='my-4'><button className="btn" href="https://www.hilton.com/en/book/reservation/deeplink/?ctyhocn=FDRHSHX&groupCode=CHHSIW&arrivaldate=2024-09-27&departuredate=2024-09-29&cid=OM,WW,HILTONLINK,EN,DirectLink&fromId=HILTONLINKDIRECT">Click Here</button> to book a hotel block room</h3>
-				<p className='md:mx-12'>If you prefer a king bedroom and there are only double queens available (or vice versa), go to the Hampton Inn Fort Dedrick website to book there. On the day of check in, let the desk know you are part of our hotel block. We plan to move any extra guest booked hotel rooms into block!</p>
-				<h4 className='mt-4'>Other Hotel Options:</h4>
-				<p>There are many other hotel and airbnb options around Frederick that could suit your stay. These are our suggestions:</p>
+				<p className="mt-2">
+					Please book ASAP - it will be a busy weekend in Frederick!
+				</p>
+				<p className="mt-6">
+					<span class="font-semibold">Wedding Party</span>: you do not need to book. Please contact
+					Charlene at charlenesimonds@gmail.com for info on your
+					accomodations.
+				</p>
+				<span class="bg-greenlight2 hover:bg-greenlight3 my-6 py-3 text-lg font-spinnaker px-4 rounded-md text-white cursor-pointer">
+					<p>Book at our hotel block:</p>
+					<p>Hampton Inn & Suites Fort Dedrick</p>
+				</span>
+				<a
+					href="https://maps.app.goo.gl/F4HvgvnzGwAvVvSS7"
+					className="font-bold underline"
+				>
+					1565 Opossumtown Pike
+					<br></br>Frederick, MD 21702
+				</a>
+				<div className="flex flex-col gap-6 md:gap-8 mt-6 md:mt-8 text-left">
+					<span>
+						<h3>Transportation?</h3>
+						<p>
+							A complimentary coach shuttle will be going to the
+							Ceremony and returning to this hotel. Any wedding
+							guest can take the shuttle!
+						</p>
+					</span>
+					<span>
+						<h3>When does the Shuttle leave?</h3>
+						<p>
+							The shuttle leaves at 2:15pm on Saturday, before
+							regular check-in time. If you would like to check
+							into your room on Saturday, before going to the
+							wedding, please ask for early check in and plan
+							accordingly.
+						</p>
+					</span>
+					<span>
+						<h3>No rooms left in the hotel block?</h3>
+						<p>
+							If there are no rooms left in the hotel block, book
+							on the{' '}
+							<a className="font-bold underline" href="https://www.hilton.com/en/hotels/fdrhshx-hampton-suites-frederick-fort-detrick/">
+								Hampton Inn Fort Dedrick website
+							</a>
+							. On the day of check in, let the desk know you are
+							part of our hotel block. We plan to move any extra
+							guest booked hotel rooms into our block!
+						</p>
+					</span>
+				</div>
+				<h4 className="mt-6">Other Hotel Options:</h4>
+				<a href="https://www.marriott.com/en-us/hotels/wasfk-springhill-suites-frederick/overview/" className="font-bold underline">
+					Marriot Springfield Manor
+				</a>
 			</div>
 		</div>
 	);

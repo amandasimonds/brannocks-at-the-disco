@@ -51,6 +51,7 @@ module.exports = {
 			green: '#354e2f',
 			greenlight: '#687c4d',
 			greenlight2: '#89A466',
+			greenlight3: '#8cc881',
 			greenlightest: '#D7E8C2',
 			rust: '#D77E61',
 			orange: '#d0671f',

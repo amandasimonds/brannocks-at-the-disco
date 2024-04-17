@@ -1,8 +1,6 @@
 import React from 'react';
 import { AiFillHeart } from 'react-icons/ai';
-import {
-	Link
-} from 'react-scroll';
+import { Link } from 'react-scroll';
 
 const Navbar = (props) => {
 	const navLinks = [
@@ -32,7 +30,7 @@ const Navbar = (props) => {
 						<li className="flex gap-1 items-center hover:text-rust">
 							<AiFillHeart className="text-rust w-[12px]" />
 							<Link
-								to={ props.auth ? link.link : 'login'}
+								to={props.auth ? link.link : 'login'}
 								activeClass="text-rust"
 								spy={true}
 								smooth={'easeInOutCubic'}
@@ -46,6 +44,17 @@ const Navbar = (props) => {
 							</Link>
 						</li>
 					))}
+
+					<li className="flex gap-1 items-center hover:text-rust">
+						<AiFillHeart className="text-rust w-[12px]" />
+						<a
+							rel="noreferrer"
+							target="_blank"
+							href="https://withjoy.com/amanda-and-ben-eclug84sbl000e01tyfi8r0ofks/registry"
+						>
+							registry
+						</a>
+					</li>
 				</ul>
 			</div>
 		</div>

@@ -119,4 +119,8 @@
 	.schedule div:last-of-type .row-divider {
 		display: none;
 	} 
+
+	.color {
+		background-color: #8cc881;
+	}
 }
