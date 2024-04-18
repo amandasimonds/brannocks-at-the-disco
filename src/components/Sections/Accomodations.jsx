@@ -9,14 +9,16 @@ const Accomodations = () => {
 					Please book ASAP - it will be a busy weekend in Frederick!
 				</p>
 				<p className="mt-6">
-					<span className="font-semibold">Wedding Party</span>: you do not need to book. Please contact
-					Charlene at charlenesimonds@gmail.com for info on your
-					accomodations.
+					<span className="font-semibold">Wedding Party</span>: you do
+					not need to book. Please contact Charlene at
+					charlenesimonds@gmail.com for info on your accomodations.
 				</p>
-				<span className="bg-greenlight2 hover:bg-greenlight3 my-6 py-3 text-lg font-spinnaker px-4 rounded-md text-white cursor-pointer">
-					<p>Book at our hotel block:</p>
-					<p>Hampton Inn & Suites Fort Dedrick</p>
-				</span>
+				<a target="_blank" href="https://www.hilton.com/en/book/reservation/deeplink/?ctyhocn=FDRHSHX&groupCode=CHHSIW&arrivaldate=2024-09-27&departuredate=2024-09-29&cid=OM,WW,HILTONLINK,EN,DirectLink&fromId=HILTONLINKDIRECT" rel="noreferrer">
+					<button className="bg-greenlight2 hover:bg-greenlight3 my-6 py-3 text-lg font-spinnaker px-4 rounded-md text-white cursor-pointer">
+						<p>Book at our hotel block:</p>
+						<p>Hampton Inn & Suites Fort Dedrick</p>
+					</button>
+				</a>
 				<a
 					href="https://maps.app.goo.gl/F4HvgvnzGwAvVvSS7"
 					className="font-bold underline"
@@ -48,7 +50,10 @@ const Accomodations = () => {
 						<p>
 							If there are no rooms left in the hotel block, book
 							on the{' '}
-							<a className="font-bold underline" href="https://www.hilton.com/en/hotels/fdrhshx-hampton-suites-frederick-fort-detrick/">
+							<a
+								className="font-bold underline"
+								href="https://www.hilton.com/en/hotels/fdrhshx-hampton-suites-frederick-fort-detrick/"
+							>
 								Hampton Inn Fort Dedrick website
 							</a>
 							. On the day of check in, let the desk know you are
@@ -58,7 +63,10 @@ const Accomodations = () => {
 					</span>
 				</div>
 				<h4 className="mt-6">Other Hotel Options:</h4>
-				<a href="https://www.marriott.com/en-us/hotels/wasfk-springhill-suites-frederick/overview/" className="font-bold underline">
+				<a
+					href="https://www.marriott.com/en-us/hotels/wasfk-springhill-suites-frederick/overview/"
+					className="font-bold underline"
+				>
 					Marriot Springfield Manor
 				</a>
 			</div>

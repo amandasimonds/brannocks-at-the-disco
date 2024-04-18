@@ -8,7 +8,7 @@ const WeddingDay = () => {
 			location: 'Hampton Inn Fort Dedrick',
 			misc: [
 				'Everyone is welcome to board the complimentary shuttle to the venue.',
-				'It will leave the hotel at 2:15PM from the hotel at 1565 Opossumtown Pike, Frederick',
+				'It will leave at 2:15PM from the hotel at 1565 Opossumtown Pike, Frederick',
 				'*If you are checking into the hotel on Saturday, plan accordingly as regular check in time is after 3pm.',
 			],
 		},
