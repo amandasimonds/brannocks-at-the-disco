@@ -1,4 +1,6 @@
 import React from 'react';
+import Sprout from '../../assets/images/sprout.svg';
+import Branch from '../../assets/images/branch.svg';
 
 const WeddingDay = () => {
 	const rows = [
@@ -58,9 +60,10 @@ const WeddingDay = () => {
 				<div className="mt-2 flex flex-col items-center text-center">
 					<h3>Saturday, September 28, 2024</h3>
 					<h3>3:00 - 9:00 PM</h3>
-					<p className="mt-2">Mountain Memories at ThorpeWood</p>
+					<h3 className="mt-2">Mountain Memories at ThorpeWood</h3>
 					<p>12805A Mink Farm Rd</p>
 					<p>Thurmont, MD 21788</p>
+					<img src={Sprout} className="md:w-20 my-10 animate-slide-in-right" alt="" />
 					<span className="mt-2 ml-4 mr-4">
 						<p>Welcome Party: 8pm, Friday, September 27</p>
 						<p>@ Brewer's Alley.</p>
@@ -85,6 +88,7 @@ const WeddingDay = () => {
 						</tbody>
 					))}
 				</table>
+			<img src={Branch} className="w-20 rotate-45" alt="" />
 			</div>
 		</div>
 	);
