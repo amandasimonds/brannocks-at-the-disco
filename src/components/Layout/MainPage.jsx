@@ -14,6 +14,7 @@ export const MainPage = (props) => {
 	auth.onAuthStateChanged(function (user) {
 		if (user) {
 			setUser(user);
+			console.log(user, currentUser)
 		} else if (localStorage.getItem("welcome") === "intothewoodsyeoyeo") {
 			console.log("checked local storage")
 		} else {
@@ -27,12 +28,14 @@ export const MainPage = (props) => {
 
 	const checkPassword = (event) => {
 		event.preventDefault();
+		console.log('checkpw')
 		signInWithEmailAndPassword(
 			auth,
 			'guest@guest.com',
 			enteredPassword.toLowerCase()
 		)
 			.then((userCredential) => {
+				console.log('setusercredential')
 				setUser(userCredential.user);
 				console.log('hey');
 				localStorage.setItem("welcome", "intothewoodsyeoyeo")

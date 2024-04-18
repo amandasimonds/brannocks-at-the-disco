@@ -105,7 +105,7 @@
 	}
 
 	.btn {
-		@apply bg-greenlight2 text-white py-1 px-2 rounded-md font-spinnaker;
+		@apply bg-greenlight2 text-white py-1 px-2 rounded-md font-spinnaker cursor-pointer;
 	}
 
 	.input {
