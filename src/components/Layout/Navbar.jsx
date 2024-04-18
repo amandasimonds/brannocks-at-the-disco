@@ -6,11 +6,15 @@ const Navbar = (props) => {
 	const navLinks = [
 		{
 			title: 'our wedding',
-			link: 'wedding-day',
+			link: 'our-wedding',
 		},
 		{
-			title: 'accomodations',
-			link: 'accomodations',
+			title: 'the weekend',
+			link: 'weekend-plan',
+		},
+		{
+			title: 'accommodations',
+			link: 'accommodations',
 		},
 		{
 			title: 'rsvp',

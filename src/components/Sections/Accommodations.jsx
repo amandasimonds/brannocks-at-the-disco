@@ -1,13 +1,13 @@
 import React from 'react';
 import Sprout from '../../assets/images/sprout.svg';
 
-const Accomodations = () => {
+const Accommodations = () => {
 	const hotels = [
 		{
-			name: 'Marriot Springhill Suites',
+			name: 'Marriott Springhill Suites',
 			link: 'https://www.marriott.com/en-us/hotels/wasfk-springhill-suites-frederick/overview/',
 			description:
-				'Marriot about 10 minutes away from Frederick and 10 minutes closer to the venue.',
+				'Marriott about 10 minutes away from Frederick and 10 minutes closer to the venue.',
 		},
 		{
 			name: 'Springfield Manor',
@@ -24,16 +24,17 @@ const Accomodations = () => {
 	];
 
 	return (
-		<div id="accomodations" className="w-full w-3/5">
+		<div id="accommodations" className="md:w-3/5">
 			<div className="flex flex-col items-center w-full text-center">
-				<h1>Accomodations</h1>
+				<h1>Accommodations</h1>
 				<p className="mt-2">
 					Please book ASAP - it will be a busy weekend in Frederick!
 				</p>
 				<p className="mt-6">
-					<span className="font-semibold">Wedding Party</span>: you do
+					<span className="font-semibold">Wedding Party</span>: you
+					will be staying at the Hampton Inn Fort Detrick, but you do
 					not need to book. Please contact Charlene at
-					charlenesimonds@gmail.com for info on your accomodations.
+					charlenesimonds@gmail.com for info on your accommodations.
 				</p>
 				<a
 					target="_blank"
@@ -42,7 +43,7 @@ const Accomodations = () => {
 				>
 					<button className="bg-greenlight2 hover:bg-greenlight3 my-6 py-3 text-lg font-spinnaker px-4 rounded-md text-white cursor-pointer">
 						<p>Book at our hotel block:</p>
-						<p>Hampton Inn & Suites Fort Dedrick</p>
+						<p>Hampton Inn & Suites Fort Detrick</p>
 					</button>
 				</a>
 				<a
@@ -57,7 +58,7 @@ const Accomodations = () => {
 						<h3>Transportation?</h3>
 						<p>
 							A complimentary coach shuttle will be going to the
-							Ceremony and returning to this hotel. Any wedding
+							Ceremony and returning to the Hampton Inn Fort Detrick hotel. Any wedding
 							guest can take the shuttle!
 						</p>
 					</span>
@@ -67,7 +68,7 @@ const Accomodations = () => {
 							The shuttle leaves at 2:15pm on Saturday, before
 							regular check-in time. If you would like to check
 							into your room on Saturday, before going to the
-							wedding, please ask for early check in and plan
+							wedding, please ask for early check-in and plan
 							accordingly.
 						</p>
 					</span>
@@ -80,7 +81,7 @@ const Accomodations = () => {
 								className="underline"
 								href="https://www.hilton.com/en/hotels/fdrhshx-hampton-suites-frederick-fort-detrick/"
 							>
-								Hampton Inn Fort Dedrick website
+								Hampton Inn Fort Detrick website
 							</a>
 							. On the day of check in, let the desk know you are
 							part of our hotel block. We plan to move any extra
@@ -89,7 +90,11 @@ const Accomodations = () => {
 					</span>
 				</div>
 
-				<img src={Sprout} className="md:w-20 my-10 animate-slide-in-right" alt="" />
+				<img
+					src={Sprout}
+					className="md:w-20 my-10 animate-slide-in-right"
+					alt=""
+				/>
 
 				<div className="flex flex-col gap-4 mt-4 text-left">
 					<h3 className="mt-6">More Accomodation Options:</h3>
@@ -112,4 +117,4 @@ const Accomodations = () => {
 	);
 };
 
-export default Accomodations;
+export default Accommodations;
