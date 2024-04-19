@@ -50,7 +50,7 @@ const WeekendPlan = () => {
 		{
 			time: '10:00 PM',
 			event: 'After Party',
-			location: 'Brewers Alley',
+			location: `Brewer's Alley`,
 			misc: ['Continue the party at a charming bar in Frederick.'],
 		},
 	];

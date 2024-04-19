@@ -97,7 +97,7 @@ const Accommodations = () => {
 				/>
 
 				<div className="flex flex-col gap-4 mt-4 text-left">
-					<h3 className="mt-6">More Accomodation Options:</h3>
+					<h3 className="mt-6">More Accommodation Options:</h3>
 					{hotels.map((hotel) => (
 						<span>
 							<a
