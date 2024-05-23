@@ -73,7 +73,7 @@
 
 @layer base {
 	body {
-		@apply text-gray font-ibarra;
+		@apply text-lg md:text-base text-gray font-ibarra;
 	}
 
 	a {
@@ -97,11 +97,11 @@
 	}
 
 	h3 {
-		@apply md:text-lg text-base text-greenlight font-spinnaker;
+		@apply md:text-lg text-greenlight font-spinnaker;
 	}
 
 	h4 {
-		@apply md:text-base font-semibold;
+		@apply font-semibold;
 	}
 
 	.btn {
