@@ -6,7 +6,9 @@ const Rsvp = () => {
 		<div id="rsvp" className="w-full">
 			<div className="flex flex-col items-center w-full">
 				<h1>RSVP</h1>
-				<button className='btn'>Coming Soon</button>
+				<a href="https://www.zola.com/wedding/brannocksimondsweddi/rsvp" target="_blank" rel="noreferrer">
+					<button className='btn' href="https://www.zola.com/wedding/brannocksimondsweddi/rsvp">RSVP Here!</button>
+				</a>
 			</div>
 		</div>
 	);

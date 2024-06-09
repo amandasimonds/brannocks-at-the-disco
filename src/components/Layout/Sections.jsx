@@ -1,7 +1,6 @@
 import React from 'react';
 import WeekendPlan from '../Sections/WeekendPlan';
 import Accommodations from '../Sections/Accommodations';
-import Rsvp from '../Sections/Rsvp';
 import Contact from '../Sections/Contact';
 import OurWedding from '../Sections/OurWedding';
 
@@ -11,7 +10,6 @@ const Sections = () => {
 			<OurWedding/>
 			<WeekendPlan/>
 			<Accommodations/>
-			<Rsvp/>
 			<Contact/>
 		</div>
 	);

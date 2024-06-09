@@ -59,9 +59,9 @@ const WeekendPlan = () => {
 		<div id="weekend-plan" className="w-full">
 			<div className="flex flex-col items-center w-full">
 				<h1 className="my-6">The Weekend</h1>
-				<h2 className="my-5">Friday, September 27th</h2>
-				<tr className="w-3/4 row-divider"></tr>
-				<table className='w-full'>
+				<h2 className="mt-5 mb-4">Friday, September 27th</h2>
+				<tr className="w-10 row-divider"></tr>
+				<table className='w-full mt-2'>
 					<tbody className="flex md:items-center flex-col w-full">
 						<tr className="flex md:gap-12 schedule-row p-3 md:p-10 flex-col md:flex-row w-full">
 							<td className="flex md:justify-end flex-shrink-0 flex-grow-0 basis-1/4">
@@ -79,15 +79,15 @@ const WeekendPlan = () => {
 						</tr>
 					</tbody>
 				</table>
-				<h2 className="my-5 mt-10">Saturday, September 28th</h2>
-				<tr className="w-3/4 row-divider"></tr>
-				<table className="mb-5 w-full schedule">
+				<h2 className="mb-4 mt-10">Saturday, September 28th</h2>
+				<tr className="w-10 row-divider"></tr>
+				<table className='w-full mt-2'>
 					{rows.map((row) => (
 						<tbody
 							key={row.event}
 							className="flex md:items-center flex-col w-full"
 						>
-							<tr className="flex md:gap-12 schedule-row p-3 md:p-10 flex-col md:flex-row w-full">
+							<tr className="flex md:gap-12 schedule-row p-3 md:p-10 pr-10 md:pr-20 flex-col md:flex-row w-full">
 								<td className="flex md:justify-end flex-shrink-0 flex-grow-0 basis-1/4">
 									<h3>{row.time}</h3>
 								</td>
@@ -99,7 +99,7 @@ const WeekendPlan = () => {
 									))}
 								</td>
 							</tr>
-							<tr className="w-3/4 row-divider"></tr>
+							<tr className="md:w-full lg:w-4/5 row-divider"></tr>
 						</tbody>
 					))}
 				</table>
