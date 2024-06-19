@@ -14,9 +14,9 @@ export const MainPage = (props) => {
 	auth.onAuthStateChanged(function (user) {
 		if (user) {
 			setUser(user);
-			console.log(user, currentUser)
-		} else if (localStorage.getItem("welcome") === "intothewoodsyeoyeo") {
-			console.log("checked local storage")
+			console.log(user, currentUser);
+		} else if (localStorage.getItem('welcome') === 'intothewoodsyeoyeo') {
+			console.log('checked local storage');
 		} else {
 			console.log('no user logged in');
 		}
@@ -28,17 +28,17 @@ export const MainPage = (props) => {
 
 	const checkPassword = (event) => {
 		event.preventDefault();
-		console.log('checkpw')
+		console.log('checkpw');
 		signInWithEmailAndPassword(
 			auth,
 			'guest@guest.com',
 			enteredPassword.toLowerCase()
 		)
 			.then((userCredential) => {
-				console.log('setusercredential')
+				console.log('setusercredential');
 				setUser(userCredential.user);
 				console.log('hey');
-				localStorage.setItem("welcome", "intothewoodsyeoyeo")
+				localStorage.setItem('welcome', 'intothewoodsyeoyeo');
 			})
 			.catch((error) => {
 				alert(
@@ -56,28 +56,37 @@ export const MainPage = (props) => {
 	return (
 		<div>
 			<Header />
-			<Navbar auth={currentUser}/>
+			<Navbar auth={currentUser} />
 			<Hero id="home" />
 			{currentUser ? (
 				<Sections />
 			) : (
-				<div id="login" className="flex justify-center pt-5 pb-5 animate-fade-in delay-200">
-					<div className="flex flex-col items-center gap-4 w-10/12 bg-greenlightest p-4 rounded">
-						Please enter the guest password
-						<input
-							type="text"
-							className="input"
-							value={enteredPassword}
-							onChange={passwordInputChangeHandler}
-							onKeyDown={handleEnterKeyDown}
-						/>
-						<button
-							className="btn"
-							type="submit"
-							onClick={checkPassword}
-						>
-							Enter
-						</button>
+				<div className="flex flex-col justify-center items-center pt-5 pb-5 animate-fade-in delay-200 w-100 p-4">
+					<a
+						href="https://www.zola.com/wedding/brannocksimondsweddi/rsvp"
+						className="pb-10 pt-4 underline text-5xl font-spinnaker border-solid border-1 border-gray"
+					>
+						<button className='border-solid border rounded-lg p-4 shadow-lg border-greenlight'>RSVP</button>
+					</a>
+					<div id="login">
+						<div className="flex flex-col items-center gap-4 rounded px-4 text-center">
+							To view more info about the wedding, please enter
+							the guest password found on your invitation.
+							<input
+								type="text"
+								className="input lowercase"
+								value={enteredPassword}
+								onChange={passwordInputChangeHandler}
+								onKeyDown={handleEnterKeyDown}
+							/>
+							<button
+								className="btn"
+								type="submit"
+								onClick={checkPassword}
+							>
+								Enter
+							</button>
+						</div>
 					</div>
 				</div>
 			)}
